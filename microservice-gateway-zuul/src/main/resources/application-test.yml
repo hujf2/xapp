@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: microservice-gateway-zuul
+  zipkin:
+    base-url: http://192.168.11.112:9000
+  sleuth:
+    sampler:
+      percentage: 1.0
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@192.168.11.112:8761/eureka
+  instance:
+    prefer-ip-address: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+
