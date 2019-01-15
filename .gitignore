@@ -1,0 +1,13 @@
+lib/
+bin/
+logs/
+target/
+classes/
+.settings/
+.project
+.classpath
+.DS_Store
+.idea
+*.iml
+*.log
+*.config.json
