@@ -24,7 +24,7 @@
 
 package tk.mybatis.springboot.model;
 
-import javax.persistence.*;
+import javax.persistence.Transient;
 
 /**
  * 基础信息

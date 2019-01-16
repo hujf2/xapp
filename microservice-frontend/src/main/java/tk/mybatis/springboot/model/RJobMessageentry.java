@@ -1,7 +1,5 @@
 package tk.mybatis.springboot.model;
 
-import javax.persistence.*;
-
 public class RJobMessageentry {
 	
     private Integer idJob;

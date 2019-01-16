@@ -24,21 +24,35 @@
 
 package tk.mybatis.springboot.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
 import com.github.pagehelper.PageInfo;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
-import tk.mybatis.springboot.jobenum.JobStatusEnum;
 import tk.mybatis.springboot.jobenum.SelectStatusEnum;
-import tk.mybatis.springboot.model.*;
-
-import java.awt.print.Book;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import tk.mybatis.springboot.model.GroupEntry;
+import tk.mybatis.springboot.model.JobClass;
+import tk.mybatis.springboot.model.JobDetailPojo;
+import tk.mybatis.springboot.model.JobWatcher;
+import tk.mybatis.springboot.model.RJob;
+import tk.mybatis.springboot.model.RJobMessageentry;
+import tk.mybatis.springboot.model.RJobMsghistory;
+import tk.mybatis.springboot.model.RServerNode;
 
 /**
  * @author hujunfeng

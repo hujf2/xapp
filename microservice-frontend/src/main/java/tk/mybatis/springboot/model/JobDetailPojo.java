@@ -1,7 +1,5 @@
 package tk.mybatis.springboot.model;
 
-import java.util.Date;
-import java.util.HashMap;
 import java.util.Map;
 
 /**

@@ -8,8 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.apache.ibatis.type.Alias;
-
 @Table(name = "R_JOB")
 public class RJob extends BaseEntity{
 	@Id

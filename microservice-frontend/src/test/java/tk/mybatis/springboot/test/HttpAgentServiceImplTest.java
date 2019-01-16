@@ -7,10 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
-import tk.mybatis.springboot.FrontendJobApplication;
-import tk.mybatis.springboot.model.*;
 
-import java.util.List;
+import tk.mybatis.springboot.FrontendJobApplication;
+import tk.mybatis.springboot.model.JobDetailPojo;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

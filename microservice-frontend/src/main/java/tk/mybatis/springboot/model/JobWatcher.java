@@ -1,6 +1,10 @@
 package tk.mybatis.springboot.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Table(name = "JOB_WATCHER")
 public class JobWatcher extends BaseEntity{
